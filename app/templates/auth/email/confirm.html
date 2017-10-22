@@ -1,0 +1,8 @@
+<p>你好 {{ user.username }},</p>
+<p>欢迎来到 <b>WANG</b>!</p>
+<p>为了认证你的账号请 <a href="{{ url_for('auth.confirm', token=token, _external=True) }}">点击这里</a>.</p>
+<p>或者，您可以在浏览器的地址栏中粘贴以下链接：</p>
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
+<p>感谢</p>
+<p>来自WANG Team</p>
+<p><small>注意：不要等待此电子邮件地址的回复。</small></p>
